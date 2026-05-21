@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NotebookLM Bridge for Claude Code</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 0.5rem; color: #58a6ff; }
+    p { color: #8b949e; margin-bottom: 1.5rem; }
+    .btn {
+      display: inline-block;
+      background: #238636;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #2ea043; }
+    .btn-secondary {
+      background: #21262d;
+      border: 1px solid #30363d;
+    }
+    .btn-secondary:hover { background: #30363d; }
+    code {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 0.2rem 0.5rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #79c0ff;
+    }
+    .instructions {
+      text-align: left;
+      margin-top: 1.5rem;
+      background: #0d1117;
+      border-radius: 8px;
+      padding: 1rem;
+      border: 1px solid #30363d;
+    }
+    .instructions h3 { color: #58a6ff; margin-bottom: 0.5rem; }
+    .instructions ol { padding-left: 1.2rem; }
+    .instructions li { margin-bottom: 0.5rem; color: #8b949e; }
+    .instructions li strong { color: #e6edf3; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>&#127758; NotebookLM Bridge</h1>
+    <p>Integre o NotebookLM com o <strong>Claude Code</strong> via MCP</p>
+
+    <a href="https://notebooklm.google.com" target="_blank" class="btn">
+      &#128218; Abrir NotebookLM
+    </a>
+    <a href="https://github.com/paulacunhaadv7-cmd/notebooklm-claude-bridge" target="_blank" class="btn btn-secondary">
+      &#128196; Ver no GitHub
+    </a>
+
+    <div class="instructions">
+      <h3>&#9889; Como usar no Claude Code</h3>
+      <ol>
+        <li><strong>Clone o repositorio:</strong><br/>
+          <code>git clone https://github.com/paulacunhaadv7-cmd/notebooklm-claude-bridge</code>
+        </li>
+        <li><strong>Instale as dependencias:</strong><br/>
+          <code>cd notebooklm-claude-bridge && npm install</code>
+        </li>
+        <li><strong>Configure o MCP no Claude Code</strong> adicionando ao seu claude_desktop_config.json</li>
+        <li><strong>Acesse pelo GitHub Pages:</strong><br/>
+          https://paulacunhaadv7-cmd.github.io/notebooklm-claude-bridge
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
